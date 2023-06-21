@@ -58,10 +58,9 @@ def reload(self):
 
 def delete(self, obj=None):
     """Delete a given object from __objects, if it exists."""
-    if obj is not None:
-        key = "{}.{}".format(type(obj).__name__, obj.id)
-        self.__objects.pop(key, None)
-
+    if obj:
+        keyVal = "{}.{}".format(type(obj).__name__, obj.id)
+        del self.__objects[keyVal]
 
 def close(self):
     """Call the reload method."""
