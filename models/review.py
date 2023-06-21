@@ -4,7 +4,7 @@ from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-     """Represents a review for a MySQL database.
+    """Represents a review for a MySQL database.
 
     Inherits from SQLAlchemy Base and links to the MySQL table reviews.
 
