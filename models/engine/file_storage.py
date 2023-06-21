@@ -62,6 +62,7 @@ def delete(self, obj=None):
         keyVal = "{}.{}".format(type(obj).__name__, obj.id)
         del self.__objects[keyVal]
 
+
 def close(self):
     """Call the reload method."""
     self.reload()
