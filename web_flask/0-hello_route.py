@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-""" code to start a flask web app.
-app is on 0.0.0.0, port 5000.
-Routes:
-    /: to display 'Hello HBNB!'
-"""
+# starts flask
 from flask import Flask
-
 app = Flask(__name__)
 
 
-@app.route("/", strict_slashes=False)
-def hello_hbnb():
-    """ to display 'Hello HBNB!'"""
+@app.route('/', strict_slashes=False)
+def hello_world():
+    # prints hello
     return "Hello HBNB!"
 
 
